@@ -1,7 +1,7 @@
 class Admin::UsersController < ApplicationController
   before_action :require_admin
   def index
-    @user = User.all
+    @users = User.all
   end
 
   def show
